@@ -1,7 +1,7 @@
 """
 Title: Movie Review Sentiment Analysis
 Author: Abhinav Thukral
-Description:
+Description: Implemented text analysis using machine learning models to classify movie review sentiments as positive or negative.
 """
 
 #Importing Essentials
