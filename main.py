@@ -73,9 +73,9 @@ token_search = ['awesome']
 print('\nSearch Results for token/s:',token_search)
 print(tokens.loc[tokens['Token'].isin(token_search)])
 #Analyse False Negatives (Actual: 1; Predicted: 0)(Predicted negative review for a positive review) 
-# print(X_test[ y_pred < y_test ])
+print(X_test[ y_pred < y_test ])
 #Analyse False Positives (Actual: 0; Predicted: 1)(Predicted positive review for a negative review) 
-# print(X_test[ y_pred > y_test ])
+print(X_test[ y_pred > y_test ])
 
 #Custom Test: Test a review on the best performing model (Logistic Regression)
 trainingVector = CountVectorizer(stop_words='english', ngram_range = (1,1), max_df = .80, min_df = 5)
