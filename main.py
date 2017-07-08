@@ -92,7 +92,7 @@ test_dtm = trainingVector.transform(test)
 predLabel = LR_complete.predict(test_dtm)
 tags = ['Negative','Positive']
 #Display Output
-print('The review is: ',tags[predLabel[0]])
+print('The review is predicted',tags[predLabel[0]])
 
 """
 Output:
@@ -132,5 +132,5 @@ Search Results for token/s: ['awesome']
 
 Test a custom review message
 Enter review to be analysed:  I really appreciate the details of the movie. It was an awesome experience.
-The review is:  Positive
+The review is predicted Positive
 """
